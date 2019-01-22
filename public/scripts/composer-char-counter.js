@@ -1,12 +1,9 @@
 $(document).ready(function() {
-  function eventPrinter (event) {
-    console.log(event);
+  function eventPrinter () {
+    console.log($(this).val());
   }
-  $('.new-tweet').on('click', eventPrinter);
-  $('.new-tweet').on('change', eventPrinter);
-  $('.new-tweet').on('keyup', eventPrinter);
-  $('.new-tweet').on('keydown', eventPrinter);
-  $('.new-tweet').on('blur', eventPrinter);
-  $('.new-tweet').on('keypress', eventPrinter);
-  $('.new-tweet').on('input', eventPrinter);
+  $('.new-tweet form textarea').on('input', eventPrinter); // using this because MDN doc suggests it'll work for the task at hand
 });
+
+var comment = $.trim($("#comment").val());
+// https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-get-value-from-textarea
