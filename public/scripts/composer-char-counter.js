@@ -1,12 +1,14 @@
 $(document).ready(function() {
 
-  let maxCount = 140;
+  const maxCharCount = 140;
 
   function eventPrinter () {
-    console.log(maxCount - $(this).val().length);
+    let charCount = maxCharCount - $(this).val().length;
+    $(this).siblings('.counter').text(charCount);
   }
+
+
   $('.new-tweet form textarea').on('input', eventPrinter); // using this because MDN doc suggests it'll work for the task at hand
 });
 
-var comment = $.trim($("#comment").val());
 // https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-get-value-from-textarea
