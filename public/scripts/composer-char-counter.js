@@ -1,10 +1,16 @@
 $(document).ready(function() {
 
-  const maxCharCount = 140;
 
   function eventPrinter () {
+    const maxCharCount = 140;
     let charCount = maxCharCount - $(this).val().length;
-    $(this).siblings('.counter').text(charCount);
+    const counter = $(this).siblings('.counter');
+    counter.text(charCount);
+    if (charCount < 0){
+      counter.css('color', 'red');
+    } else {
+      counter.css('color', 'black');
+    }
   }
 
 
