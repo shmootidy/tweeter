@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -34,6 +36,7 @@
     </nav>
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
@@ -42,6 +45,19 @@
           <span class="counter">140</span>
         </form>
       </section>
+
+      <section class="tweet">
+        <article>
+          <header>
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/smiling-face-with-smiling-eyes_1f60a.png">
+            <span class="user-name">Joe Blow</span>
+            <span class="user-handle">@joeblow</span>
+          </header>
+          <div class="content">Tweet tweet tweet</div>
+          <footer class="content">10,000 years ago</footer>
+        </article>
+      </section>
+
     </main>
 
   </body>

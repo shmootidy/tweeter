@@ -1,0 +1,45 @@
+
+
+section.tweet article {
+  margin-top: 20px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  overflow: hidden; /* otherwise the corner of the child header pokes out */
+}
+
+section.tweet header {
+  background-color: #EEEEEE;
+  padding: 5px;
+}
+
+section.tweet header .user-name {
+  font-size: 1.25rem;
+  color: #657E85;
+  font-weight: bold;
+  vertical-align: top;
+  line-height: 1.5;
+  margin-left: 3px;
+}
+
+.user-handle {
+  color: #ACACAC;
+  float: right;
+  font-size: .75rem;
+}
+
+.tweet img {
+  height: 30px;
+}
+
+.tweet .content {
+  padding: 5px;
+}
+
+.tweet div.content {
+  margin: 10px;
+}
+
+.tweet footer.content {
+  font-size: .6rem;
+  border-top: 1px #d3d3d3 solid;
+}
