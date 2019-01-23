@@ -32,7 +32,7 @@ span.counter {
 .error {
   padding: 1px 7px 2px; /* same as tweet button, to line up */
   color: red;
-  /*visibility: hidden;*/
+  display: none;
 }
 
 /*https://uxplanet.org/how-to-write-a-perfect-error-message-da1ca65a8f36*/

@@ -52,12 +52,17 @@ $(function() {
     const $twit = $(this).serialize();
     const $twitLength = $twit.length - 5; // this takes care of the `text=` that starts the string
 
-    $('.error').slideUp('fast');
+    $('.error').slideUp();
+
     if ($twitLength > 140) {
-      $('.error').text('Too many characters there, bud.').slideDown();
+      $('.error').slideDown({ start: function() {
+        $(this).text('Too many characters there, bud.');
+      }});
       return;
     } else if ($twitLength < 1) {
-      $('.error').text('Ah, yes. The ol\' empty tweet...').slideDown();
+      $('.error').slideDown({ start: function() {
+        $(this).text('Ah, yes. The ol\' empty tweet...');
+      }});
       return;
     }
 
