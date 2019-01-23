@@ -1,23 +1,34 @@
 $(function() {
 
   function createTweetElement(tweetObj) {
-    let articleElement;
     const userName = tweetObj.user.name;
     const avatar = tweetObj.user.avatars.small;
     const userHandle = tweetObj.user.handle;
     const tweetContent = tweetObj.content.text;
     const datePosted = tweetObj.created_at;
 
+    // create article
+    const articleElement = $('<article>').addClass('old-tweets');
 
-    // user.name          --> section.old-tweets header span.user-name
-    // user.avatars.small --> section.old-tweets header img
-    // user.handle        --> section.old-tweets header span.user-handle
-    // content.text       --> section.old-tweets div.content
-    // created_at         --> section.old-tweets footer.content span.time
+    const headerElm = $('<header>').appendTo(articleElement); // keep empty
+    const avatarElm = $('<img>').attr('src', avatar).appendTo(headerElm);
+    const userNameElm = $('<span>').addClass('user-name').text(userName).appendTo(headerElm);
+    const handleElm = $('<span>').addClass('user-handle').text(userHandle).appendTo(headerElm);
+
+    const contentElm = $('<div>').addClass('content').text(tweetContent).appendTo(articleElement);
+
+    const footerElm = $('<footer>').addClass('content').appendTo(articleElement); // keep empty
+    const timeElm = $('<span>').addClass('time').text(datePosted).appendTo(footerElm);
+
+    const iconsElm = $('<span>').addClass('icons').appendTo(footerElm); // keep empty
+    const flagIconElm = $('<span>').addClass('icon').text('⚑').appendTo(iconsElm);
+    const retwitIconElm = $('<span>').addClass('icon').text('↻').appendTo(iconsElm);
+    const heartIconElm = $('<span>').addClass('icon').text('♥').appendTo(iconsElm);
+
     return articleElement;
   }
 
-  const tweetData = {
+const tweetData = {
   "user": {
     "name": "Newton",
     "avatars": {
