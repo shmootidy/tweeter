@@ -10,20 +10,19 @@ $(function() {
     // create article
     const articleElement = $('<article>').addClass('old-tweets');
 
-    const headerElm = $('<header>').appendTo(articleElement); // keep empty
-    const avatarElm = $('<img>').attr('src', avatar).appendTo(headerElm);
-    const userNameElm = $('<span>').addClass('user-name').text(userName).appendTo(headerElm);
-    const handleElm = $('<span>').addClass('user-handle').text(userHandle).appendTo(headerElm);
+    $('<header>').appendTo(articleElement) // keep empty
+      .append($('<img>').attr('src', avatar))
+      .append($('<span>').addClass('user-name').text(userName))
+      .append($('<span>').addClass('user-handle').text(userHandle));
 
-    const contentElm = $('<div>').addClass('content').text(tweetContent).appendTo(articleElement);
+    $('<div>').addClass('content').text(tweetContent).appendTo(articleElement);
 
-    const footerElm = $('<footer>').addClass('content').appendTo(articleElement); // keep empty
-    const timeElm = $('<span>').addClass('time').text(datePosted).appendTo(footerElm);
-
-    const iconsElm = $('<span>').addClass('icons').appendTo(footerElm); // keep empty
-    const flagIconElm = $('<span>').addClass('icon').text('⚑').appendTo(iconsElm);
-    const retwitIconElm = $('<span>').addClass('icon').text('↻').appendTo(iconsElm);
-    const heartIconElm = $('<span>').addClass('icon').text('♥').appendTo(iconsElm);
+    const footerElm = $('<footer>').addClass('content').appendTo(articleElement)
+    .append($('<span>').addClass('time').text(datePosted)
+    .append($('<span>').addClass('icons') // keep empty
+      .append($('<span>').addClass('icon').text('⚑'))
+      .append($('<span>').addClass('icon').text('↻'))
+      .append($('<span>').addClass('icon').text('♥'))));
 
     return articleElement;
   }
