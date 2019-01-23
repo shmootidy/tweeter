@@ -12,15 +12,16 @@ section.new-tweet {
   border-bottom: 1px solid black;
   margin-top: 5px;
 }
-form {
-}
+
 textarea {
   width: 100%;
   padding: 5px;
 }
+
 input {
   background-color: transparent;
 }
+
 span.counter {
   float: right;
   font-size: .75rem;
