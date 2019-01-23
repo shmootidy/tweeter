@@ -51,7 +51,15 @@ $(function() {
   $('#submit-twit').on('submit', function(e) {
     e.preventDefault();
     const $twit = $(this).serialize();
-    console.log($twit);
+    const $twitLength = $twit.length - 5; // this takes care of the `text=` that starts the string
+    console.log($twit, $twitLength);
+
+    if ($twitLength > 140) {
+      return alert("Too long!");
+    } else if ($twitLength < 1) {
+      return alert('Empty input!')
+    }
+
     $.ajax({
       method: 'POST',
       url: '/tweets',
