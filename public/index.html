@@ -18,6 +18,9 @@
 
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/tweet-hover.css" type="text/css" />
+
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -46,15 +49,26 @@
         </form>
       </section>
 
-      <section class="tweet">
+      <section class="old-tweets">
         <article>
+
           <header>
             <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/smiling-face-with-smiling-eyes_1f60a.png">
             <span class="user-name">Joe Blow</span>
             <span class="user-handle">@joeblow</span>
           </header>
+
           <div class="content">Tweet tweet tweet</div>
-          <footer class="content">10,000 years ago</footer>
+
+          <footer class="content">
+            <span>10,000 years ago</span>
+            <span class="icons">
+              <span class="icon">⚑</span>
+              <span class="icon">↻</span>
+              <span class="icon">♥</span>
+            </span>
+          </footer>
+
         </article>
       </section>
 
