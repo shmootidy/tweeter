@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
   function eventPrinter () {
     const maxCharCount = 140;
