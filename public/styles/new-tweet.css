@@ -28,3 +28,12 @@ span.counter {
   font-style: italic;
   padding: 5px 5px;
 }
+
+.error {
+  padding: 1px 7px 2px; /* same as tweet button, to line up */
+  color: red;
+  /*visibility: hidden;*/
+}
+
+/*https://uxplanet.org/how-to-write-a-perfect-error-message-da1ca65a8f36*/
+/*clear, helpful, specific, polite, humor when appropriate*/

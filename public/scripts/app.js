@@ -53,9 +53,17 @@ $(function() {
     const $twitLength = $twit.length - 5; // this takes care of the `text=` that starts the string
 
     if ($twitLength > 140) {
-      return alert("Too long!");
+      $('.error').text('Too many characters there, bud.').slideDown();
+      $('textarea').focus(()=> {
+        $('.error').slideUp('slow');
+      });
+      return;
     } else if ($twitLength < 1) {
-      return alert('Empty input!')
+      $('.error').text('Ah, yes. The ol\' empty tweet...').slideDown('fast');
+      $('textarea').focus(()=> {
+        $('.error').slideUp('slow');
+      });
+      return;
     }
 
     $.ajax({
@@ -69,6 +77,7 @@ $(function() {
 
   $('.button').on('click', () => {
     $('.new-tweet').slideToggle('slow');
+    $('textarea').focus();
   });
 
 });
