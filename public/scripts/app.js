@@ -30,7 +30,7 @@ $(function() {
   function renderTweets(arrOfTweetObjs) {
     for (const tweetObj of arrOfTweetObjs){
       var $tweet = createTweetElement(tweetObj);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   }
 
@@ -52,7 +52,6 @@ $(function() {
     e.preventDefault();
     const $twit = $(this).serialize();
     const $twitLength = $twit.length - 5; // this takes care of the `text=` that starts the string
-    console.log($twit, $twitLength);
 
     if ($twitLength > 140) {
       return alert("Too long!");
