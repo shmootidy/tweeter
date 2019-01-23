@@ -45,7 +45,6 @@ $(function() {
       renderTweets(tweets);
     });
   }
-
   loadTweets();
 
   $('#submit-twit').on('submit', function(e) {
@@ -66,6 +65,10 @@ $(function() {
     }).done(function() {
       loadTweets();
     });
+  });
+
+  $('.button').on('click', () => {
+    $('.new-tweet').slideToggle('slow');
   });
 
 });
