@@ -12,9 +12,14 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   // connection to `test-tweets db` starts here
   console.log(`Connected to mongodb: ${MONGODB_URI}`);
 
-  // any program logic that needs the connection is invoked here
+  db.collection('tweets').find({}, (err, result) => {
 
+    if (err) throw err;
 
-  // at end, close the connxn
-  db.close();
+    console.log('find result: ', result);
+    console.log('type of find result: ', typeof result);
+
+    db.close();
+  });
+
 });
