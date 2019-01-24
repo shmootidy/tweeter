@@ -82,7 +82,7 @@ $(function() {
     $('textarea').focus();
   });
 
-  function timeSince(unixTime) {
+  function timeSince(unixTime) { // https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
     const date = new Date(unixTime);
     const seconds = Math.floor((new Date() - date) / 1000);
     let interval = Math.floor(seconds / 31536000); // a year (in sec) --> 24hr(day) * 60min(hr) * 60sec(min) * 365days(yr)
