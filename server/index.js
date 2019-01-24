@@ -10,14 +10,8 @@ const app           = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// remove the in-memory db
-// const db = require("./lib/in-memory-db");
-
 const MongoClient = require('mongodb').MongoClient;
 const MONGODB_URI = 'mongodb://localhost:27017/tweeter';
-
-// instead, connect to mongo
-// once connected, pass mongo db to data-helpers
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
