@@ -71,6 +71,8 @@ $(function() {
       url: '/tweets',
       data: $twit,
     }).done(function() {
+      $('#submit-twit textarea').val(''); // https://stackoverflow.com/questions/15545379/empty-the-contents-of-a-textarea-after-submit
+      $('.counter').text('140');
       loadTweets();
     });
   });
@@ -81,11 +83,3 @@ $(function() {
   });
 
 });
-
-
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
