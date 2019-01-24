@@ -29,7 +29,7 @@ module.exports = function(DataHelpers) {
       content: {
         text: req.body.text
       },
-      created_at: Date.now() // make this reflect 'time since'
+      created_at: Date.now() // tis not the place....
     };
 
     DataHelpers.saveTweet(tweet, (err) => {
