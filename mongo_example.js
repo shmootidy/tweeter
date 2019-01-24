@@ -16,8 +16,13 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
 
     if (err) throw err;
 
-    console.log('for each item yielded by the cursor:');
-    results.each((err, item) => console.log(' ', item));
+    // console.log('for each item yielded by the cursor:');
+
+    results.toArray((err, resultsArray) => {
+      if (err) throw err;
+
+      console.log('results.toArray:', resultsArray);
+    });
 
     db.close();
   });
