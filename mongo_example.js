@@ -12,17 +12,10 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   // connection to `test-tweets db` starts here
   console.log(`Connected to mongodb: ${MONGODB_URI}`);
 
-  db.collection('tweets').find({}, (err, results) => {
-
+  db.collection('tweets').find().toArray((err, results) => {
     if (err) throw err;
 
-    // console.log('for each item yielded by the cursor:');
-
-    results.toArray((err, resultsArray) => {
-      if (err) throw err;
-
-      console.log('results.toArray:', resultsArray);
-    });
+    console.log('results array: ', results);
 
     db.close();
   });
