@@ -1,17 +1,34 @@
-# Tweeter Project
+# Tweeter
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone that runs on a local server. This is a student project to practice full-stack development.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+## Screenshots
 
-## Getting Started
+## Installation
+From the command line...
+1. Clone the repo into a tweeter directory.
+`git clone git@github.com:shmootidy/tweeter.git tweeter`
+2. Install dependencies.
+`npm install`
+3. Start the web server.
+`npm run local`
+4. Open Tweeter and go!
+`http://localhost:8080/`
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+## Features
+* Time stamp is sensible and human-friendly.
+* Tweets are read in reverse chronological order (newest first).
+* Toggle the compose tweet input fields with a nifty button.
+* All tweets saved to external database and will survive server restart.
 
 ## Dependencies
+* Node 5.10.x or above
+* Express
+* Body Parser
+* Chance
+* md5
+* MongoDB
+* Nodemon
 
-- Express
-- Node 5.10.x or above
+## Credit
+The lovely developers at Lighthouse Labs built the bones of this project and helped guide me (and all the other students in my cohort) toward its successful completion.
