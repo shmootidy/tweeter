@@ -1,6 +1,7 @@
-$(function() {
+/* eslint no-undef: 'off' */
 
-  function eventPrinter () {
+$(() => {
+  function eventPrinter() {
     const maxCharCount = 140;
     const charCount = maxCharCount - $(this).val().length;
     const counter = $(this).siblings('.counter');
