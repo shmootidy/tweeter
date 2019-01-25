@@ -41,33 +41,33 @@ $(() => {
     });
   }
 
-  const allTwits = $('#tweets-container');
+  const allTweets = $('#tweets-container');
 
   function loadTweets() {
     $.ajax({
       method: 'GET',
       url: '/tweets',
     }).done((tweets) => {
-      allTwits.empty();
+      allTweets.empty();
       renderTweets(tweets);
     });
   }
   loadTweets();
 
-  $('#submit-twit').on('submit', function (e) {
+  $('#submit-tweet').on('submit', function (e) {
     e.preventDefault();
-    const $twit = $(this).serialize();
-    const $twitLength = $twit.length - 5; // this takes care of the `text=` that starts the string
+    const $tweet = $(this).serialize();
+    const $tweetLength = $tweet.length - 5; // this takes care of the `text=` that starts the string
 
     $('.error').slideUp();
 
-    if ($twitLength > 140) {
+    if ($tweetLength > 140) {
       $('.error').slideDown({ start: function () {
         $(this).text('Too many characters there, bud.');
       } });
       return;
     }
-    if ($twitLength < 1) {
+    if ($tweetLength < 1) {
       $('.error').slideDown({ start: function () {
         $(this).text('Ah, yes. The ol\' empty tweet...');
       } });
@@ -77,9 +77,9 @@ $(() => {
     $.ajax({
       method: 'POST',
       url: '/tweets',
-      data: $twit,
+      data: $tweet,
     }).done(() => {
-      $('#submit-twit textarea').val(''); // https://stackoverflow.com/questions/15545379/empty-the-contents-of-a-textarea-after-submit
+      $('#submit-tweet textarea').val(''); // https://stackoverflow.com/questions/15545379/empty-the-contents-of-a-textarea-after-submit
       $('.counter').text('140');
       loadTweets();
     });
