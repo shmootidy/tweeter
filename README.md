@@ -21,10 +21,10 @@ From the command line...
 
 ## Features
 * Time stamp is sensible and human-friendly.
-* Tweets are read in reverse chronological order (newest first).
+* Tweets are displayed in reverse chronological order (newest first).
 * Toggle the compose tweet input fields with a nifty button.
-* All tweets saved to external database and will survive server restart.
-* Handy character counter that turns red to tell you when your entry is too long.
+* All tweets save to external database and will survive server restart.
+* Handy character counter turns red to tell you when your entry is too long.
 
 ## Dependencies
 * Node 5.10.x or above
