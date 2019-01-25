@@ -25,6 +25,7 @@ From the command line...
 * Toggle the compose tweet input fields with a nifty button.
 * All tweets save to external database and will survive server restart.
 * Handy character counter turns red to tell you when your entry is too long.
+* Hover to highlight individual tweets.
 
 ## Dependencies
 * Node 5.10.x or above
