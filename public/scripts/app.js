@@ -37,10 +37,10 @@ $(() => {
   } // end of function declaration
 
   function renderTweets(arrOfTweetObjs) {
-    for (const tweetObj of arrOfTweetObjs) {
+    arrOfTweetObjs.forEach((tweetObj) => {
       const $tweet = createTweetElement(tweetObj);
       $('#tweets-container').prepend($tweet);
-    }
+    });
   }
 
   const allTwits = $('#tweets-container');
@@ -97,22 +97,22 @@ $(() => {
     const seconds = Math.floor((new Date() - date) / 1000);
     let interval = Math.floor(seconds / 31536000); // a year (in sec) --> 24hr(day) * 60min(hr) * 60sec(min) * 365days(yr)
 
-    if (interval > 1) return interval + ' years';
+    if (interval > 1) return `${interval} years`;
 
     interval = Math.floor(seconds / 2592000); // 30 days (in sec) --> 24hr * 60min * 60sec * 30days(mon)
-    if (interval > 1) return interval + ' months';
+    if (interval > 1) return `${interval} months`;
 
     interval = Math.floor(seconds / 86400); // 1 day (in sec) --> 24hr * 60min * 60sec
-    if (interval > 1) return interval + ' days';
+    if (interval > 1) return `${interval} days`;
 
     interval = Math.floor(seconds / 3600); // 1 hr (in sec) --> 60min * 60sec
-    if (interval > 1) return interval + ' hours';
+    if (interval > 1) return `${interval} hours`;
 
     interval = Math.floor(seconds / 60); // 1 min (in sec) --> 60sec
 
-    if (interval > 1) return interval + ' minutes';
+    if (interval > 1) return `${interval} minutes`;
 
-    return seconds + ' seconds';
+    return `${seconds} seconds`;
   }
 
 });
