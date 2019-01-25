@@ -7,7 +7,6 @@
 /* eslint object-shorthand: 'off' */
 /* eslint max-len: 'off' */
 
-
 $(() => {
   function createTweetElement(tweetObj) {
     const userName = tweetObj.user.name;
@@ -16,10 +15,9 @@ $(() => {
     const tweetContent = tweetObj.content.text;
     const datePosted = timeSince(tweetObj.created_at);
 
-    // create article
     const articleElement = $('<article>').addClass('old-tweets');
 
-    $('<header>').appendTo(articleElement) // keep empty
+    $('<header>').appendTo(articleElement)
       .append($('<img>').attr('src', avatar))
       .append($('<span>').addClass('user-name').text(userName))
       .append($('<span>').addClass('user-handle').text(userHandle));
@@ -28,13 +26,13 @@ $(() => {
 
     $('<footer>').addClass('content').appendTo(articleElement)
       .append($('<span>').addClass('time').text(datePosted)
-        .append($('<span>').addClass('icons') // keep empty
+        .append($('<span>').addClass('icons')
           .append($('<span>').addClass('icon').text('⚑'))
           .append($('<span>').addClass('icon').text('↻'))
           .append($('<span>').addClass('icon').text('♥'))));
 
     return articleElement;
-  } // end of function declaration
+  }
 
   function renderTweets(arrOfTweetObjs) {
     arrOfTweetObjs.forEach((tweetObj) => {
