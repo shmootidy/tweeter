@@ -3,6 +3,10 @@
 Tweeter is a simple, single-page Twitter clone that runs on a local server. This is a student project to practice full-stack development.
 
 ## Screenshots
+!['Screenshot of tweets'](https://github.com/shmootidy/tweeter/blob/master/docs/all-tweets.png?raw=true)
+!['Screenshot of compose box'](https://github.com/shmootidy/tweeter/blob/master/docs/compose.png?raw=true)
+!['Screenshot of error message (empty tweet)'](https://github.com/shmootidy/tweeter/blob/master/docs/error-empty.png?raw=true)
+!['Screenshot of error message (too long)'](https://github.com/shmootidy/tweeter/blob/master/docs/error-too-long.png?raw=true)
 
 ## Installation
 From the command line...
@@ -20,6 +24,7 @@ From the command line...
 * Tweets are read in reverse chronological order (newest first).
 * Toggle the compose tweet input fields with a nifty button.
 * All tweets saved to external database and will survive server restart.
+* Handy character counter that turns red to tell you when your entry is too long.
 
 ## Dependencies
 * Node 5.10.x or above
