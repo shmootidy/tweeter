@@ -30,7 +30,7 @@ $faded-opac: .8;
   .content {
     padding: 5px;
   }
-  div.content { /* prob can remove class from this selector */
+  div.content {
     margin: 10px;
   }
   footer {
@@ -47,3 +47,5 @@ $faded-opac: .8;
     }
   }
 }
+
+@import 'partials/tweet-hover';

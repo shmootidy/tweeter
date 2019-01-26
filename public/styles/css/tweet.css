@@ -34,7 +34,6 @@
   padding: 5px;
 }
 .old-tweets div.content {
-  /* prob can remove class from this selector */
   margin: 10px;
 }
 .old-tweets footer {
@@ -49,6 +48,23 @@
 .old-tweets .icons .icon {
   font-size: 0.9rem;
   color: #00a087;
+}
+
+.old-tweets:hover {
+  border: 1px #244751 solid;
+}
+.old-tweets:hover header .user-name {
+  opacity: 1;
+}
+.old-tweets:hover header .user-handle {
+  opacity: 1;
+}
+.old-tweets:hover header img {
+  opacity: 1;
+  height: 30px;
+}
+.old-tweets:hover .icons {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=tweet.css.map */
