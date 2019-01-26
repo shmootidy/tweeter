@@ -1,0 +1,22 @@
+$full-opac: 1;
+
+.old-tweets:hover {
+  border: 1px #244751 solid;
+  header {
+    .user-name {
+    opacity: $full-opac;
+    }
+    .user-handle {
+      opacity: $full-opac;
+    }
+    img {
+      opacity: $full-opac;
+      height: 30px;
+    }
+  }
+  .icons {
+    opacity: $full-opac;
+  }
+}
+
+
