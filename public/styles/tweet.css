@@ -13,7 +13,6 @@
 .old-tweets header .user-name {
   opacity: .8; /* change with hover */
   font-size: 1.25rem;
-  /*color: #244751;*/
   font-weight: bold;
   vertical-align: top;
   line-height: 1.5;
