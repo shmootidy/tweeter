@@ -31,6 +31,5 @@ main.container {
   overflow: hidden;
   padding: 0 2em 25px;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+@import 'partials/nav';
