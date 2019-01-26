@@ -86,8 +86,11 @@ $(() => {
   });
 
   $('.button').on('click', () => {
-    $('.new-tweet').slideToggle('slow');
-    $('textarea').focus();
+    $('.new-tweet').slideToggle({ done: function () {
+      if ($(this).css('display') === 'block'){
+        $('textarea').focus();
+      }
+    } });
   });
 
   function timeSince(unixTime) { // https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
