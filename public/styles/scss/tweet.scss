@@ -1,3 +1,5 @@
+$faded-opac: .8;
+
 .old-tweets {
   margin-top: 20px;
   border: 1px #d3d3d3 solid;
@@ -7,7 +9,7 @@
     background-color: #EEEEEE;
     padding: 5px;
     .user-name {
-      opacity: .8; /* change with hover */
+      opacity: $faded-opac; /* change with hover */
       font-size: 1.25rem;
       font-weight: bold;
       vertical-align: top;
@@ -15,13 +17,13 @@
       margin-left: 3px;
     }
     .user-handle {
-      opacity: .8; /* change with hover */
+      opacity: $faded-opac; /* change with hover */
       color: #ACACAC;
       float: right;
       font-size: .75rem;
     }
     img {
-      opacity: .8; /* change with hover */
+      opacity: $faded-opac; /* change with hover */
       height: 30px;
     }
   }
