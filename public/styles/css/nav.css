@@ -18,8 +18,6 @@
 #nav-bar .header {
   font-size: 2rem;
   line-height: 2.5;
-  float: left;
-  /* doesn't seem to do anything */
 }
 #nav-bar .button {
   margin-top: 14.5px;
