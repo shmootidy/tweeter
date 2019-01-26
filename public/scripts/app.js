@@ -25,11 +25,11 @@ $(() => {
     $('<div>').addClass('content').text(tweetContent).appendTo(articleElement);
 
     $('<footer>').addClass('content').appendTo(articleElement)
-      .append($('<span>').addClass('time').text(datePosted)
-        .append($('<span>').addClass('icons')
-          .append($('<span>').addClass('icon').text('⚑'))
-          .append($('<span>').addClass('icon').text('↻'))
-          .append($('<span>').addClass('icon').text('♥'))));
+      .append($('<span>').addClass('time').text(datePosted))
+      .append($('<span>').addClass('icons')
+        .append($('<span>').addClass('icon').text('⚑'))
+        .append($('<span>').addClass('icon').text('↻'))
+        .append($('<span>').addClass('icon').text('♥')));
 
     return articleElement;
   }
