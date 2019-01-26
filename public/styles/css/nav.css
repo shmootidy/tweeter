@@ -8,20 +8,19 @@
   padding: 0 2em;
   z-index: 100;
 }
-
 #nav-bar .logo {
   height: 80px;
   width: 80px;
   margin-right: 10px;
-  float: left; /* This keeps the header from going wonksville */
+  float: left;
+  /* This keeps the header from going wonksville */
 }
-
 #nav-bar .header {
   font-size: 2rem;
   line-height: 2.5;
-  float: left; /* doesn't seem to do anything */
+  float: left;
+  /* doesn't seem to do anything */
 }
-
 #nav-bar .button {
   margin-top: 14.5px;
   float: right;
@@ -31,8 +30,9 @@
   color: #00a087;
   border-color: black;
 }
-
 #nav-bar .button:hover {
   background-color: white;
   color: black;
 }
+
+/*# sourceMappingURL=nav.css.map */

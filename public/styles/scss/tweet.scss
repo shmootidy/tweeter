@@ -1,0 +1,47 @@
+.old-tweets {
+  margin-top: 20px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  overflow: hidden; /* otherwise the corner of the child header pokes out */
+  header {
+    background-color: #EEEEEE;
+    padding: 5px;
+    .user-name {
+      opacity: .8; /* change with hover */
+      font-size: 1.25rem;
+      font-weight: bold;
+      vertical-align: top;
+      line-height: 1.5;
+      margin-left: 3px;
+    }
+    .user-handle {
+      opacity: .8; /* change with hover */
+      color: #ACACAC;
+      float: right;
+      font-size: .75rem;
+    }
+    img {
+      opacity: .8; /* change with hover */
+      height: 30px;
+    }
+  }
+  .content {
+    padding: 5px;
+  }
+  div.content { /* prob can remove class from this selector */
+    margin: 10px;
+  }
+  footer {
+    font-size: .6rem;
+    border-top: 1px #d3d3d3 solid;
+  }
+  .icons {
+    opacity: 0;
+    float: right;
+    margin-bottom: 10px;
+    .icon {
+      font-size: .9rem;
+      color: #00a087;
+    }
+  }
+}
