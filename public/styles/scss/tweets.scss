@@ -9,7 +9,7 @@ $faded-opac: .8;
     background-color: #EEEEEE;
     padding: 5px;
     .user-name {
-      opacity: $faded-opac; /* change with hover */
+      opacity: $faded-opac;
       font-size: 1.25rem;
       font-weight: bold;
       vertical-align: top;
@@ -17,13 +17,13 @@ $faded-opac: .8;
       margin-left: 3px;
     }
     .user-handle {
-      opacity: $faded-opac; /* change with hover */
+      opacity: $faded-opac;
       color: #ACACAC;
       float: right;
       font-size: .75rem;
     }
     img {
-      opacity: $faded-opac; /* change with hover */
+      opacity: $faded-opac;
       height: 30px;
     }
   }

@@ -11,7 +11,6 @@
 }
 .old-tweets header .user-name {
   opacity: 0.8;
-  /* change with hover */
   font-size: 1.25rem;
   font-weight: bold;
   vertical-align: top;
@@ -20,14 +19,12 @@
 }
 .old-tweets header .user-handle {
   opacity: 0.8;
-  /* change with hover */
   color: #ACACAC;
   float: right;
   font-size: 0.75rem;
 }
 .old-tweets header img {
   opacity: 0.8;
-  /* change with hover */
   height: 30px;
 }
 .old-tweets .content {
