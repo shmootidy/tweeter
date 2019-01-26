@@ -57,7 +57,7 @@ $(() => {
   $('#submit-tweet').on('submit', function (e) {
     e.preventDefault();
     const $tweet = $(this).serialize();
-    const $tweetLength = $tweet.length - 5; // this takes care of the `text=` that starts the string
+    const $tweetLength = $(this).children('textarea').val().length;
 
     $('.error').slideUp();
 
