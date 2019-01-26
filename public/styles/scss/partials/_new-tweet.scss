@@ -6,11 +6,13 @@ section.new-tweet {
   border-radius: 5px;
   padding: 0 10px 10px;
   display: none;
+
   h2 {
     padding-bottom: 1px;
     border-bottom: 1px solid black;
     margin-top: 5px;
   }
+
   form {
     textarea {
       width: 100%;
