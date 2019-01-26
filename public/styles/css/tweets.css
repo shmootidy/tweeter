@@ -86,6 +86,7 @@ section.new-tweet form textarea {
   padding: 5px;
 }
 section.new-tweet form input {
+  margin-top: 5px;
   background-color: transparent;
 }
 section.new-tweet form .counter {
