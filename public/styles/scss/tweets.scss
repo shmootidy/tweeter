@@ -25,6 +25,7 @@ $faded-opac: .8;
     img {
       opacity: $faded-opac;
       height: 30px;
+      border-radius: 5px;
     }
   }
   .content {

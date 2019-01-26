@@ -26,6 +26,7 @@
 .old-tweets header img {
   opacity: 0.8;
   height: 30px;
+  border-radius: 5px;
 }
 .old-tweets .content {
   padding: 5px;
