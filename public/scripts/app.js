@@ -93,6 +93,13 @@ $(() => {
     } });
   });
 
+  $('*').on('keydown', (e) => {
+    if (e.key === 'Tab'){
+      $('*').addClass('user-is-tabbing');
+      $(this).off('keydown');
+    }
+  }); //https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
+
   function timeSince(unixTime) { // https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
     const date = new Date(unixTime);
     const seconds = Math.floor((new Date() - date) / 1000);

@@ -21,6 +21,9 @@ body {
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
   height: 100%;
+  :not(.user-is-tabbing) *:focus {
+    outline: none;
+  }
 }
 
 main.container {

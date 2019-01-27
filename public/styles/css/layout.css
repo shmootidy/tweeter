@@ -22,6 +22,9 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   height: 100%;
 }
+body :not(.user-is-tabbing) *:focus {
+  outline: none;
+}
 
 main.container {
   width: 450px;
