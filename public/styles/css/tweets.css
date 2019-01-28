@@ -22,6 +22,7 @@
   color: #ACACAC;
   float: right;
   font-size: 0.75rem;
+  margin: 5px;
 }
 .old-tweets header img {
   opacity: 0.8;
@@ -40,6 +41,7 @@
 }
 .old-tweets footer .time {
   line-height: 3;
+  margin-left: 5px;
 }
 .old-tweets .icons {
   opacity: 0;

@@ -21,6 +21,7 @@ $faded-opac: .8;
       color: #ACACAC;
       float: right;
       font-size: .75rem;
+      margin: 5px;
     }
     img {
       opacity: $faded-opac;
@@ -39,6 +40,7 @@ $faded-opac: .8;
     border-top: 1px #d3d3d3 solid;
     .time {
       line-height: 3;
+      margin-left: 5px;
     }
   }
   .icons {
