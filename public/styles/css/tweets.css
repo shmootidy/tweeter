@@ -38,10 +38,13 @@
   font-size: 0.6rem;
   border-top: 1px #d3d3d3 solid;
 }
+.old-tweets footer .time {
+  line-height: 3;
+}
 .old-tweets .icons {
   opacity: 0;
   float: right;
-  margin-bottom: 10px;
+  margin-top: 4px;
 }
 .old-tweets .icons .icon {
   font-size: 0.9rem;

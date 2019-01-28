@@ -37,11 +37,14 @@ $faded-opac: .8;
   footer {
     font-size: .6rem;
     border-top: 1px #d3d3d3 solid;
+    .time {
+      line-height: 3;
+    }
   }
   .icons {
     opacity: 0;
     float: right;
-    margin-bottom: 10px;
+    margin-top: 4px;
     .icon {
       font-size: .9rem;
       color: #00a087;
