@@ -56,7 +56,7 @@ $(() => {
 
   $('#submit-tweet').on('submit', function (e) {
     e.preventDefault();
-    const $tweet = $(this).serialize();
+    const $tweetText = $(this).serialize();
     const $tweetLength = $(this).children('textarea').val().length;
 
     $('.error').slideUp();
@@ -77,7 +77,7 @@ $(() => {
     $.ajax({
       method: 'POST',
       url: '/tweets',
-      data: $tweet,
+      data: $tweetText,
     }).done(() => {
       $('#submit-tweet textarea').val(''); // https://stackoverflow.com/questions/15545379/empty-the-contents-of-a-textarea-after-submit
       $('.counter').text('140');
