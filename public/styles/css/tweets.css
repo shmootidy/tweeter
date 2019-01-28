@@ -46,6 +46,7 @@
 .old-tweets .icons .icon {
   font-size: 0.9rem;
   color: #00a087;
+  margin: 2px;
 }
 
 .old-tweets:hover {
